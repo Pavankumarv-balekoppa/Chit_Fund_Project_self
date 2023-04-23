@@ -1,6 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Document, Page } from 'react-pdf';
-import { saveAs } from 'file-saver';
+import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import jsPDF from 'jspdf';
 
@@ -45,11 +43,13 @@ const Customer = () => {
                 body: JSON.stringify(data)
             }).then(() => {
                 alert("successfull");
+                View()
                 cname.current.value=''
                 amount.current.value=''
                 reasion.current.value=''
                 id.current.value=''
                 branch.current.value=''
+                
             })
         }
     }
@@ -164,7 +164,7 @@ const Customer = () => {
                 </div>
 
                 <div className="pdf ">
-                    <div id='pdf' className="file border bg-light p-3 text-dark">
+                    <div id='pdf' className="file border bg-light p-3 text-dark text-start">
                         <h1 className=' bg-warning p-3 ps-5 mb-4'>PDF File</h1>
                         <h3>Customer Name : {files.C_name}</h3>
                         <h3>Amount : {files.Amount}</h3>

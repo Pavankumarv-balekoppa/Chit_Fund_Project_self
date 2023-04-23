@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Adminnav from "./Adminnav";
 import Viewfill from "./Viewbill";
 

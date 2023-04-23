@@ -98,6 +98,27 @@
       "Reasion": "chick fund",
       "Branch": "Davanagere",
       "id": "6"
+    },
+    {
+      "C_name": "kumar V",
+      "Amount": "600000",
+      "Reasion": "first salary",
+      "Branch": "Bengaluru",
+      "id": "7"
+    },
+    {
+      "C_name": "Vajeerappa",
+      "Amount": "100000000",
+      "Reasion": "Home",
+      "Branch": "Shivamogga",
+      "id": "8"
+    },
+    {
+      "C_name": "pavan v balekoppa",
+      "Amount": "500000",
+      "Reasion": "share",
+      "Branch": "Bangalore Rural",
+      "id": "9"
     }
   ]
 }

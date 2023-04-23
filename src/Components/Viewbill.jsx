@@ -22,13 +22,13 @@ const Viewfill = () => {
         let fecthing = async () => {
             let res = await fetch('http://localhost:7000/Pay')
             let data = await res.json()
-            if (branch.current.value == "All") 
+            if (branch.current.value === "All") 
             {
                 setfile(data)
             }
-            else if (branch.current.value == branch.current.value) 
+            else if (branch.current.value === branch.current.value) 
             {
-                let filterr = data.filter((x) => x.Branch == branch.current.value)
+                let filterr = data.filter((x) => x.Branch === branch.current.value)
                 setfile(filterr)
             }
         }
@@ -77,14 +77,14 @@ const Viewfill = () => {
                     <button className="btn btn bg-dark text-light ms-1" onClick={ok}>Filter</button>
                 </div>
                 <div className="bu">
-                    {path.pathname=='/customer/viewbill' ? 
+                    {path.pathname==='/customer/viewbill' ? 
                     <Link to='/customer' className="btn btn bg-danger">Back</Link> : 
                     <Link to='/admin' className="btn btn bg-danger">Back</Link> }
                 </div>
             </div><hr />
             <div className="all  d-flex flex-wrap">
                 {files.map((x) => (
-                    <div style={{ width: 430 }} className="bill bg-success text-warning p-3 m-2 border border-warning rounded-4">
+                    <div style={{ width: 430 }} className="bill bg-success text-warning p-3 m-2 border border-warning rounded-4 text-start">
                         <h3>Customer Name : {x.C_name}</h3>
                         <h3>Amount : {x.Amount}</h3>
                         <h3>Reasion :{x.Reasion}</h3>
