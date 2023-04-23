@@ -1,0 +1,103 @@
+{
+  "Customer": [
+    {
+      "name": "pavan",
+      "email": "pavan@gmail.com",
+      "password": "pavan",
+      "kind": "customer",
+      "id": 1
+    },
+    {
+      "name": "dhananjaya",
+      "email": "dhanu@gmail.com",
+      "password": "dhanu",
+      "kind": "customer",
+      "id": 2
+    },
+    {
+      "name": "Raji",
+      "email": "raji@gmail.com",
+      "password": "pavan",
+      "kind": "customer",
+      "id": 3
+    }
+  ],
+  "Admin": [
+    {
+      "name": "pavankumar",
+      "email": "pavan@gmail.com",
+      "password": "pavan",
+      "tocken": "96874jdshguy",
+      "kind": "admin",
+      "id": 1
+    },
+    {
+      "name": "dhananjaya",
+      "email": "dhanu@gmail.com",
+      "password": "dhanu",
+      "tocken": "dsjhcvsudkgc",
+      "kind": "admin",
+      "id": 2
+    },
+    {
+      "name": "madhu",
+      "email": "madhu@gmail.com",
+      "password": "madhu",
+      "tocken": "madhu98675",
+      "kind": "admin",
+      "id": 3
+    },
+    {
+      "name": "Indhira ",
+      "email": "indhira@gmail.com",
+      "password": "indhira",
+      "tocken": "INDH",
+      "kind": "admin",
+      "id": 4
+    }
+  ],
+  "Pay": [
+    {
+      "C_name": "Dhananjaya",
+      "Amount": "5000000",
+      "Reasion": "first salary",
+      "Branch": "Shivamogga",
+      "id": "1"
+    },
+    {
+      "C_name": "pavankumar",
+      "Amount": "50000",
+      "Reasion": "first salary",
+      "Branch": "Shivamogga",
+      "id": "2"
+    },
+    {
+      "C_name": "pavan",
+      "Amount": "100000",
+      "Reasion": "sumne",
+      "Branch": "Davanagere",
+      "id": "3"
+    },
+    {
+      "C_name": "kumar",
+      "Amount": "100000",
+      "Reasion": "enilla",
+      "Branch": "Davanagere",
+      "id": "4"
+    },
+    {
+      "C_name": "Madhu",
+      "Amount": "5000000",
+      "Reasion": "chick fund",
+      "Branch": "Shivamogga",
+      "id": "5"
+    },
+    {
+      "C_name": "Raji",
+      "Amount": "5000000",
+      "Reasion": "chick fund",
+      "Branch": "Davanagere",
+      "id": "6"
+    }
+  ]
+}
