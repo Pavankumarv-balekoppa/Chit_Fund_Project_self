@@ -37,7 +37,7 @@ const Login = () => {
 
 
     return (
-        <div className="login p-2 d-flex justify-content-evenly m-5 ms-5">
+        <div className="login p-2 d-flex flex-wrap justify-content-evenly ">
             <div className="img mt-5">
                 <img src="https://i.gifer.com/origin/f5/f5baef4b6b6677020ab8d091ef78a3bc_w200.webp" alt="" />
                 {/* <img src="https://i.gifer.com/origin/10/108ac686886133567e0c31a1d92b89c1_w200.webp" alt="" /> */}

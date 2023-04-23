@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Adminnav = () => {
     let [cust, setcust] = useState([])
     let [adm, setadmin] = useState([])
-    let[set,setset]=useState(false)
+    let [set, setset] = useState(false)
 
-    let customer=() => {
+    let customer = () => {
         let fecting = async () => {
             let resp = await fetch('http://localhost:7000/Customer')
             let data = await resp.json()
@@ -16,8 +16,8 @@ const Adminnav = () => {
         fecting()
         setset(true)
     }
-    
-    let admin=() => {
+
+    let admin = () => {
         let fecting = async () => {
             let resp = await fetch('http://localhost:7000/Admin')
             let data = await resp.json()
@@ -34,52 +34,58 @@ const Adminnav = () => {
                 <Link to='/admin/viewbill' className="btn btn bg-danger">Bills</Link>
             </div><hr />
             <div className="view m-4">
-                {set==true ?
-                    <Table striped bordered hover variant="success">
-                    <thead className="bg-success ">
-                        <th>Id</th>
-                        <th>Kind</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                    </thead>
-                    <tbody>
-                        {cust.map((x) => (
-                            <tr>
-                                <td>{x.id}</td>
-                                <td>{x.kind}</td>
-                                <td>{x.name}</td>
-                                <td>{x.email}</td>
-                                <td>{x.password}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </Table> :
-                <Table striped bordered hover variant="success">
-                    <thead className="bg-success ">
-                        <th>Id</th>
-                        <th>Kind</th>
-                        <th>Name</th>
-                        <th>Tocken</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                    </thead>
-                    <tbody>
-                        {adm.map((x) => (
-                            <tr>
-                                <td>{x.id}</td>
-                                <td>{x.kind}</td>
-                                <td>{x.name}</td>
-                                <td>{x.tocken}</td>
-                                <td>{x.email}</td>
-                                <td>{x.password}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </Table> }
+                {set == true ?
+                    // <Table striped bordered hover variant="success">
+                    <table className="w-100 border border-success text-start">
+                        <thead className="bg-success ">
+                            <th>Id</th>
+                            <th>Kind</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                        </thead>
+                        <tbody>
+                            {cust.map((x) => (
+                                <tr>
+                                    <td>{x.id}</td>
+                                    <td>{x.kind}</td>
+                                    <td>{x.name}</td>
+                                    <td>{x.email}</td>
+                                    <td>{x.password}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                    // </Table> 
+                    :
+                    // <Table striped bordered hover variant="success">
+                    <table className="w-100 border border-success text-start">
+                        <thead className="bg-success ">
+                            <th>Id</th>
+                            <th>Kind</th>
+                            <th>Name</th>
+                            <th>Tocken</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                        </thead>
+                        <tbody>
+                            {adm.map((x) => (
+                                <tr>
+                                    <td>{x.id}</td>
+                                    <td>{x.kind}</td>
+                                    <td>{x.name}</td>
+                                    <td>{x.tocken}</td>
+                                    <td>{x.email}</td>
+                                    <td>{x.password}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                    // </Table>
+                }
             </div>
         </div>
-    );
+    );  
 }
 
 export default Adminnav;

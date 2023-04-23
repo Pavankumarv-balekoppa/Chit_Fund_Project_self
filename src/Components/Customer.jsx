@@ -107,7 +107,7 @@ const Customer = () => {
 
     return (
         <div className="customer m-5">
-            <div className="one d-flex justify-content-around">
+            <div className="one d-flex flex-wrap justify-content-around">
                 <div className="content pt-5">
                     <form onSubmit={pay}>
                         <div className="name m-3">

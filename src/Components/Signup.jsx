@@ -29,13 +29,13 @@ const Signup = () => {
     }
 
     return (
-        <div className="signup d-flex justify-content-evenly p-2  m-5 ms-5">
+        <div className="signup d-flex flex-wrap justify-content-evenly p-2 m-5 ms-5">
             <div className="img mt-5">
                 <img src="https://i.gifer.com/origin/f5/f5baef4b6b6677020ab8d091ef78a3bc_w200.webp" alt="" />
                 {/* <img src="https://i.gifer.com/origin/0c/0c928224e981a44014280dd496d3c6e1_w200.webp" alt="" /> */}
                 {/* <img src="https://i.gifer.com/origin/b9/b9341a7cdc9dabd29d5e29e0065a0a90_w200.webp" alt="" /> */}
             </div>
-            <form className="form w-50  p-5" onSubmit={submit}>
+            <form className="form " onSubmit={submit}>
                 <label >Username : </label><input className="ms-3" type="text" ref={name} placeholder="enter username" required /><br /><br />
                 <label>Email : </label><input className="ms-5" type="email" ref={email} placeholder="enter email" required /><br /><br />
                 <label>Password : </label><input className="ms-3" type="password" ref={password} placeholder="enter password" required /><br /><br />
@@ -44,7 +44,7 @@ const Signup = () => {
                     <label>Tocken id   :  </label><input className="ms-3" type="text" placeholder="enter tocken" ref={tocken} required /><br /><br />
                 </div>}
 
-                <div className="radio  ">
+                <div className="radio">
                     <label>UserKind : </label>
                     <input className="ms-3" type="radio" value={kind} onClick={() => { setkind("customer", settock(false)) }} name="radio" required /> <label>Customer</label>
                     <input className="ms-3" type="radio" value={kind} onClick={() => { setkind("admin", settock(true)) }} name="radio" required /> <label>Admin</label>
